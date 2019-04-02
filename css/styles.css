@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700');
+
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.section-search input {
+	padding: 5px !important;
+	font-size: 18px !important;
+	width: 90% !important;
+	border: #f4f4f4 3px solid !important;
+}
