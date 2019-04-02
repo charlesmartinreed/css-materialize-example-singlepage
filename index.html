@@ -115,7 +115,7 @@
 		</section>
 
 		<!-- Section: Icon Boxes -->
-		<section class="section section-icons amber darken-1 center">
+		<section class="section section-icons amber center">
 			<div class="container">
 				<div class="row">
 					<div class="col s12 m4">
@@ -186,7 +186,7 @@
 		</section>
 
 		<!-- Section: Follow -->
-		<section class="section section-follow amber darken-2 white-text center">
+		<section class="section section-follow amber white-text center">
 			<div class="container">
 				<div class="row">
 					<div class="col s12">
@@ -214,7 +214,7 @@
 
 		<!-- Section: Gallery -->
 		<!-- images are all placed in lightboxes -->
-		<section class="section section-gallery scrollspy">
+		<section id="gallery" class="section section-gallery scrollspy">
 			<div class="container">
 				<h4 class="center">
 					<span class="amber-text">Photo</span> Gallery
@@ -307,6 +307,12 @@
 			</div>
 		</section>
 
+		<!-- FOOTER -->
+		<footer class="section amber darken-1 white-text center">
+			<p class="flow-text">Where To? &copy; 2019</p>
+			<p class="flow-text">Built with ❤️ and plenty of 🍺 by Program All The Things</p>
+		</footer>
+
 
 		<!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -343,9 +349,11 @@
 
 		// init image gallery lightbox
 		const mb = document.querySelectorAll('.materialboxed');
-		M.Materialbox.init(mb, {
+		M.Materialbox.init(mb, {})
 
-		})
+		// init scroll spy - gies us a smooth scroll to a section when link to section clicked
+		const ss = document.querySelectorAll('.scrollspy');
+		M.ScrollSpy.init(ss, {})
 		</script>
 	</body>
 </html>
